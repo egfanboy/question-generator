@@ -1,0 +1,1 @@
+const interviewQuestionGenerator = require(`../`);
