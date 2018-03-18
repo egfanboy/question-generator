@@ -19,7 +19,7 @@ describe(`QuestionGenerator`, () => {
 
       //Act
       const result = QuestionGenerator.interview(keyword);
-      console.log(result);
+
       //Assert
       expect(result.includes(keyword)).toBeTruthy();
     });

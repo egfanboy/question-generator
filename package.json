@@ -1,15 +1,12 @@
 {
-  "name": "interview-question-generator",
+  "name": "question-generator",
   "version": "0.0.1",
   "description": "Package to generate interview style questions",
   "main": "dist/cjs/index.js",
-  "browser": "dist/umd/interviewQuestionGenerator.js",
+  "browser": "dist/umd/questionGenerator.js",
   "module": "dist/es/index.js",
   "jsxnext:main": "dist/es/index.js",
-  "files": [
-    "dist",
-    "src"
-  ],
+  "files": ["dist", "src"],
   "engines": {
     "node": ">=4.0.0"
   },
@@ -25,16 +22,21 @@
     "test:coverage": "jest --coverage ",
     "test:watch": "clear && jest --watch",
     "lint:test": "npm run lint && npm run test:coverage",
-    "build": "npm run lint:test && npm run build:cjs && npm run build:es && npm run build:umd",
-    "build:watch": "clear && rimraf dist/cjs && cross-env BABEL_ENV=cjs babel -w src --out-dir dist/cjs",
-    "build:es": "rimraf dist/es && cross-env BABEL_ENV=es babel src --out-dir dist/es",
-    "build:cjs": "rimraf dist/cjs && cross-env BABEL_ENV=cjs babel src --out-dir dist/cjs",
-    "build:umd": "rimraf dist/umd && cross-env BABEL_ENV=es rollup -c & cross-env BABEL_ENV=es NODE_ENV=production rollup -c"
+    "build":
+      "npm run lint:test && npm run build:cjs && npm run build:es && npm run build:umd",
+    "build:watch":
+      "clear && rimraf dist/cjs && cross-env BABEL_ENV=cjs babel -w src --out-dir dist/cjs",
+    "build:es":
+      "rimraf dist/es && cross-env BABEL_ENV=es babel src --out-dir dist/es",
+    "build:cjs":
+      "rimraf dist/cjs && cross-env BABEL_ENV=cjs babel src --out-dir dist/cjs",
+    "build:umd":
+      "rimraf dist/umd && cross-env BABEL_ENV=es rollup -c & cross-env BABEL_ENV=es NODE_ENV=production rollup -c"
   },
   "keywords": [],
   "author": "ericTurf (eric.turriff@gmail.com)",
   "license": "MIT",
-  "repository": "ericturf/interview-question-generator",
+  "repository": "ericturf/question-generator",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-add-module-exports": "^0.2.1",

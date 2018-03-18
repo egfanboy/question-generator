@@ -1,10 +1,10 @@
-import babel from 'rollup-plugin-babel';
-import nodeResolve from 'rollup-plugin-node-resolve';
-import uglify from 'rollup-plugin-uglify';
-import bundleSize from 'rollup-plugin-bundle-size';
-import commonjs from 'rollup-plugin-commonjs';
+import babel from "rollup-plugin-babel";
+import nodeResolve from "rollup-plugin-node-resolve";
+import uglify from "rollup-plugin-uglify";
+import bundleSize from "rollup-plugin-bundle-size";
+import commonjs from "rollup-plugin-commonjs";
 
-const name = `interviewQuestionGenerator`;
+const name = `questionGenerator`;
 
 const plugins = [
   babel(),
