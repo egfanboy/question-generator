@@ -1,4 +1,4 @@
-import sanitize, {trimString, singularize, toLowerCase} from "../src/helpers";
+import sanitize, {trimString, toLowerCase} from "../src/helpers";
 
 describe(`.sanitize`, () => {
   it(`should return the supplied string in the proper format`, () => {
