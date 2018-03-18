@@ -1,3 +1,5 @@
+import {singular} from "pluralize";
+
 import QuestionGenerator from "../src/index";
 
 describe(`QuestionGenerator`, () => {
@@ -13,7 +15,7 @@ describe(`QuestionGenerator`, () => {
       //Assert
       expect(result).toEqual(``);
     });
-    it(`should return a random string containing the supplied keyword`, () => {
+    it(`should return a random string containing the singular form of the supplied keyword`, () => {
       //Arrange
       const keyword = `turtles`;
 
@@ -21,7 +23,7 @@ describe(`QuestionGenerator`, () => {
       const result = QuestionGenerator.interview(keyword);
 
       //Assert
-      expect(result.includes(keyword)).toBeTruthy();
+      expect(result.includes(singular(keyword))).toBeTruthy();
     });
   });
 });

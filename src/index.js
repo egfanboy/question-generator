@@ -1,5 +1,10 @@
-const interview = keyword => {
-  if (!keyword) return ``;
+import sanitize from "./helpers";
+
+const interview = input => {
+  if (!input) return ``;
+
+  const keyword = sanitize(input);
+
   const questions = [
     `Would you be interested working with ${keyword}?`,
     `Have you ever shown interest in ${keyword}?`,
