@@ -2,7 +2,7 @@
 
 ## Support / Questions
 
-For **support or usage questions** like "How do I do X with question-generator." and "My code doesn't work.", please search and ask on **StackOverflow** with a **'interview-question-generator' tag** first.
+For **support or usage questions** like "How do I do X with question-generator." and "My code doesn't work.", please search and ask on **StackOverflow** with a **'question-generator' tag** first.
 
 ## Bugs
 
