@@ -1,6 +1,6 @@
 {
   "name": "question-generator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Package to generate interview style questions",
   "main": "dist/cjs/index.js",
   "browser": "dist/umd/questionGenerator.js",
