@@ -6,10 +6,22 @@ const interview = input => {
   const keyword = sanitize(input);
 
   const questions = [
+    `Would you consider to work with ${keyword}?`,
     `Would you be interested working with ${keyword}?`,
-    `Have you ever shown interest in ${keyword}?`,
+    `Would you consider work related to ${keyword}?`,
+    `Would you enjoy work related to ${keyword}?`,
+    `Would you want to pursue work related to ${keyword}?`,
     `Is working with ${keyword} something that interests you?`,
-    `Have you ever considered working with ${keyword}?`
+    `Is working with ${keyword} something you would consider doing?`,
+    `Is working with ${keyword} be something you would enjoy?`,
+    `Is working with ${keyword} be something you want to do?`,
+    `Does working with ${keyword} seem like something you would enjoy?`,
+    `Does working with ${keyword} seem like something you would consider?`,
+    `Does working with ${keyword} sound like something you are interested in?`,
+    `Have you ever shown interest in ${keyword}?`,
+    `Have you ever considered working with ${keyword}?`,
+    `Have you ever considered work in ${keyword}?`,
+    `Have you ever had any interest working with ${keyword}?`
   ];
 
   const getRandomIndex = () => Math.floor(Math.random() * questions.length);
