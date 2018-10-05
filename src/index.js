@@ -22,7 +22,9 @@ const interview = input => {
     `Have you ever considered working with ${keyword}?`,
     `Have you ever considered work in ${keyword}?`,
     `Have you ever had any interest working with ${keyword}?`,
-    `How does working with ${keyword} changed the way you think?`
+    `How does working with ${keyword} changed the way you think?`,
+    `Have you used ${keyword} for at least 3 years?`,
+    `Can you find a palendrome in a permutation fo ${keyword}?`
   ];
 
   const getRandomIndex = () => Math.floor(Math.random() * questions.length);
