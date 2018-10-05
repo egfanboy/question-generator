@@ -15,6 +15,7 @@ const interview = input => {
     `Is working with ${keyword} something you would consider doing?`,
     `Is working with ${keyword} be something you would enjoy?`,
     `Is working with ${keyword} be something you want to do?`,
+    `Is working with ${keyword} in alignment with your goals?`,
     `Does working with ${keyword} seem like something you would enjoy?`,
     `Does working with ${keyword} seem like something you would consider?`,
     `Does working with ${keyword} sound like something you are interested in?`,
@@ -22,7 +23,11 @@ const interview = input => {
     `Have you ever considered working with ${keyword}?`,
     `Have you ever considered work in ${keyword}?`,
     `Have you ever had any interest working with ${keyword}?`,
-    `How does working with ${keyword} changed the way you think?`
+    `How does working with ${keyword} change the way you think?`,
+    `Do you have prior experience working with ${keyword}?`,
+    `Did you enjoy your time working with ${keyword}?`,
+    `Would you recommend working with ${keyword}?`,
+    `How would you improve working with ${keyword}?`
   ];
 
   const getRandomIndex = () => Math.floor(Math.random() * questions.length);
